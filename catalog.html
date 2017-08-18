@@ -2,12 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+	<meta name="description" content="Магазин мороженого «Глейси»">
+	<meta name="keywords" content="Магазин мороженого, мороженое, вкусное, Глейси">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин мороженого «Глейси»</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
 	<header class="main-header">
 	  <div class="head-logo">
-		<img src="http://placehold.it/150x100.jpg" width="368" height="153" alt="Логотип Глейси">
+		<a href="index.html"><img src="http://placehold.it/150x100.jpg" width="368" height="153" alt="Логотип Глейси"></a>
 	  </div>
 	  <nav class="main-navigation">	    
 		<ul class="site-navigation">
@@ -24,14 +29,14 @@
 		  <li><a href="aboutus.html">О Компании</a></li>
 		</ul>
 		<ul class="user-navigation">
-		  <li class="search-link">Поиск</li>
+		  <li class="search-link"><a href="#">Поиск</li></a>
 		  <!-- Модальная форма поиска
 		  <div class="modal search-form">
 			<form action="/echo" method="post">
 			  <input type="search" name="search" placeholder="Что ищем?">
 			</form>
 		  </div>	-->
-		  <li class="login">Вход</li>
+		  <li class="login"><a href="#">Вход</li></a>
 		  <!--  Модальная форма входа в личный кабинет
 		  <div class="modal enter-form">
 			<form action="/echo" method="post">
@@ -50,7 +55,7 @@
 				</div>
 			</form>
 		  </div> -->
-		  <li class="full-basket">2 товара</li>
+		  <li class="full-basket"><a href="#">2 товара</li></a>
 		  <!--	Модальное окно входа в корзину
 				<div class="modal content-basket">
 					<table>
@@ -78,15 +83,15 @@
 				</div> -->
 		</ul>
 	  </nav>
-		
+	  <div class="blog-info">	
 		<p>С 10 до 20, ежедневно</p>
 		<p><b>8 812 450-25-25</b></p> 
-		
-		<ul class="breadcrumbs">
-		  <li><a href="index.html">Главная</a></li>
-		  <li><a href="catalog.html">Каталог</a></li>
-		  <li class="breadcrumbs">Сливочное</li>
-		</ul>
+	  </div>
+	  <ul class="breadcrumbs">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="catalog.html">Каталог</a></li>
+		<li class="breadcrumbs-current">Сливочное</li>
+	  </ul>
 	</header>
 	
 	<main class="container">
@@ -100,9 +105,9 @@
 			</select>
 		  </div>
 		  <div class="sort-items">
-			<!--Ползунок выбора диапазона
-			<p>Цена:<p>
-			<div class="price-range"></div> -->
+			<!--Ползунок выбора диапазона-->
+			<label for="rating">Цена:</label>
+            0 <input type="range" id="rating" name="rating" min="1" max="1000" step="5" value="50"> 1000 
 		  </div>
 		  <div class="sort-items">
 			<fieldset>
@@ -228,7 +233,7 @@
 			</div>
 		  </div>
 		  <div class="product-item">
-			<img src="img/product-11.jpg" width="220" height="165" alt="Сливочное с мятным сиропом">
+			<img src="img/product-12.jpg" width="220" height="165" alt="Сливочное с мятным сиропом">
 			<div class="price">420&#8381;<span>/кг</span></div>
 			<p><a href="#">Сливочное с мятным сиропом</a></p>
 			<div class="product-view">
@@ -266,7 +271,7 @@
 		  <a href="https://htmlacademy.ru/intensive/htmlcss">Лого</a>
 		</div>
 		<p class="footer-copyright">
-		  делано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017
+		  Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017
 		</p>
 	</footer>
 	
