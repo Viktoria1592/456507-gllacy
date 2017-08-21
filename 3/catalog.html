@@ -31,59 +31,60 @@
 		</ul>
 		<ul class="user-navigation">
 		  <li class="search-link"><a href="#">Поиск</li></a>
-		  <!-- Модальная форма поиска
+		  <!-- Модальная форма поиска-->
 		  <div class="modal search-form">
-			<form action="/echo" method="post">
-			  <input type="search" name="search" placeholder="Что ищем?">
-			</form>
-		  </div>	-->
+		  <form action="/echo" method="post">
+			 <input type="search" name="search" placeholder="Что ищем?">
+		  </form>
+		  </div>
 		  <li class="login"><a href="#">Вход</li></a>
-		  <!--  Модальная форма входа в личный кабинет
+		  <!--  Модальная форма входа в личный кабинет-->
 		  <div class="modal enter-form">
-			<form action="/echo" method="post">
-			  <input type="email" name="email" placeholder="Электронная почта" required>
-			  <input type="password" name="password" placeholder="Пароль" required>
-			    <div class="half-width">
-				  <div class="button">
-					<input type="submit" name="enter" value="Войти">
-				  </div>
+		  <form action="/echo" method="post">
+			<input type="email" name="email" placeholder="Электронная почта" required>
+			<input type="password" name="password" placeholder="Пароль" required>
+			  <div class="half-width">
+				<div class="button">
+				  <input type="submit" name="enter" value="Войти">
 				</div>
-				<div class="half-width">
-				  <div class="registration">
-					<a class="reg-password" href="#">Забыли пароль?</a>
-					<a class="reg-new" href="#">Новая регистрация</a>
-				  </div>
+			  <!--/div-->
+			  <!--div class="half-width"-->
+				<div class="registration">
+				  <a class="reg-password" href="#">Забыли пароль?</a>
+				  <a class="reg-new" href="#">Новая регистрация</a>
 				</div>
-			</form>
-		  </div> -->
-		  <li class="full-basket"><a href="#">2 товара</li></a>
-		  <!--	Модальное окно входа в корзину
-				<div class="modal content-basket">
-					<table>
-						<tr>
-							<td><div class="mark-item"></div></td>
-							<td><img src="#" width="#" height="#" alt="Пломбир"></td>
-							<td><span class="modal-close">x</span><a href="#">Пломбир с апельсиновым джемом</a></td>
-							<td>1,5кг x <span class="price-basket">200 руб.</span></td>
-							<td>300 руб.</td>
-						</tr>
-						<tr>
-							<td><div class="mark-item"></div></td>
-							<td><img src="#" width="#" height="#" alt="Клубничный пломбир"></td>
-							<td><span class="modal-close">x</span><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-							<td>1,5кг x <span class="price-basket">300 руб.</span></td>
-							<td>450 руб.</td>
-						</tr>
-						<tr>
-							<td class="sum" colspan="4"><b>Итого: 750 руб.</b></td>
-						</tr>
-					</table>
-					<div class="btn order-form">
-						<a class="btn" href="">Оформить заказ</a>
-					</div>
-				</div> -->
+			  </div>
+		  </form>
+		  </div> 
 		</ul>
 	  </nav>
+		  <li class="full-basket"><a href="#">2 товара</a></li>
+		  <!--Модальное окно входа в корзину-->
+		  <div class="modal content-basket">
+			<table>
+			  <tr>
+				<td><div class="mark-item"></div></td>
+				<td><img src="#" width="#" height="#" alt="Пломбир"></td>
+				<td><span class="modal-close">x</span><a href="#">Пломбир с апельсиновым джемом</a></td>
+				<td>1,5кг x <span class="price-basket">200 руб.</span></td>
+				<td>300 руб.</td>
+				  </tr>
+					<tr>
+					  <td><div class="mark-item"></div></td>
+				      <td><img src="#" width="#" height="#" alt="Клубничный пломбир"></td>
+					  <td><span class="modal-close">x</span><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+					  <td>1,5кг x <span class="price-basket">300 руб.</span></td>
+					  <td>450 руб.</td>
+					</tr>
+					<tr>
+					  <td class="sum" colspan="4"><b>Итого: 750 руб.</b></td>
+					</tr>
+			</table>
+			<div class="button order-form">
+			  <button class="button">Оформить заказ</a>
+			</div>
+		  </div> 
+		
 	  <div class="blog-info">	
 		<p>С 10 до 20, ежедневно</p>
 		<p><b>8 812 450-25-25</b></p> 
@@ -102,7 +103,10 @@
 		  <div class="sort-items">
 			<label for="kind-sort">Сортировка:</label>
 			<select name="kind-sort" id="kind-sort">
-				<option value="popularity">по популярности</option>
+			  <option value="popularity">по популярности</option>
+			  <option value="inexpensive">сначала недорогие</option>
+			  <option value="expensive">сначала дорогие</option>
+			  <option value="Fat content">по жирности</option>
 			</select>
 		  </div>
 		  <div class="sort-items">
@@ -144,7 +148,7 @@
 		</form>
 	  </section>
 	  
-	  <section class="product">
+	  <section class="products">
 		<div class="product-item">
 		  <img src="img/product-1.jpg" width="220" height="165" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 		  <div class="price">310&#8381;<span>/кг</span></div>
@@ -244,14 +248,12 @@
 	  </section>
 	  <!-- Нумерация страниц -->
 	  <div class="pagination">
-		<div class="pagination-page">
-		  <a href="#" class="button">«</a>
-		  <a href="#" class="active-page button">1</a>
-		  <a href="#" class="button">2</a>
-		  <a href="#" class="button">3</a>
-		  <a href="#" class="button">4</a>
-		  <a href="#" class="button">»</a>
-		</div>
+		<a href="#" class="button-page">«</a>
+		<a href="#" class="active-page button">1</a>
+		<a href="#" class="button-page">2</a>
+		<a href="#" class="button-page">3</a>
+		<a href="#" class="button-page">4</a>
+		<a href="#" class="button-page">»</a>
 	  </div>
 	</main>
 	
