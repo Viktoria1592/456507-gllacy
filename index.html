@@ -29,32 +29,33 @@
 		  <li><a href="aboutus.html">О Компании</a></li>
 		</ul>
 		<ul class="user-navigation">
-		  <li class="search-link">Поиск</li>
-		  <!-- Модальная форма поиска
+		  <li class="search-link"><a href="#">Поиск</a></li>
+		  <!-- Модальная форма поиска	-->
 		  <div class="modal search-form">
-			<form action="/echo" method="post">
-			  <input type="search" name="search" placeholder="Что ищем?">
-			</form>
-		  </div>	-->
-		  <li class="login">Вход</li>
-		  <!--  Модальная форма входа в личный кабинет
+		  <form action="/echo" method="post">
+			<label for="search"></label>
+			<input type="search" id="search" name="search" placeholder="Что ищем?">
+		  </form>
+		  </div>
+		  <li class="login"><a href="#">Вход</a></li>
+		  <!--  Модальная форма входа в личный кабинет-->
 		  <div class="modal enter-form">
-			<form action="/echo" method="post">
-			  <input type="email" name="email" placeholder="Электронная почта" required>
-			  <input type="password" name="password" placeholder="Пароль" required>
-			    <div class="half-width">
-				  <div class="button">
-					<input type="submit" name="enter" value="Войти">
-				  </div>
-				</div>
-				<div class="half-width">
-				  <div class="registration">
-					<a class="reg-password" href="#">Забыли пароль?</a>
-					<a class="reg-new" href="#">Новая регистрация</a>
-				  </div>
-				</div>
-			</form>
-		  </div> -->
+		  <form action="/echo" method="post">
+			<label for="email"></label>
+			<input type="email" name="email" id="email" placeholder="Электронная почта" required>
+			<label for="password"></label>
+			<input type="password" name="password" id="password" placeholder="Пароль" required>
+			  <div class="button">
+				 <input type="submit" name="enter" value="Войти">
+			  </div>
+			  <!--/div-->
+			  <!--div class="half-width"-->
+			  <div class="registration">
+				<a class="reg-password" href="#">Забыли пароль?</a>
+				<a class="reg-new" href="#">Новая регистрация</a>
+			  </div>
+		  </form>
+		  </div> 
 		  <li class="empty-link">Пусто</li>
 		</ul>
 	  </nav>
@@ -178,7 +179,9 @@
 			 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 		  </p>
 		  <form action="/echo" method="post">
-			<input type="email" name="subscription-email" value="Электронная почта">
+			<label for="subscription-email"></label>
+			<input type="email" name="subscription-email" placeholder="Электронная почта" required>
+			<label for="send-email"></label>
 			<input type="submit" name="send-email" value="Отправить">
 		  </form>
 		</article>
@@ -222,6 +225,27 @@
 		  <a class="button feedback" href="#">Форма обратной связи</a>
 	    </div>
 	  </section>
+	  <!-- Модальная форма обратной связи -->
+	  <div class="modal feedback">
+        <h2 class="visualy-hidden">Форма обратной связи</h2>
+        <h3>Мы обазятельно вам ответим!</h3>
+        <form action="/echo" method="post">
+          <p>
+            <label for="username"></label>
+            <input type="text" name="username" id="username" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p>
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Напишите что-нибудь..."></textarea>
+          </p>
+          <input class="button" type="button" value="Отправить">
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
 	</main>
 	  
 	<footer class="main-footer">

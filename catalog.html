@@ -29,19 +29,22 @@
 		  <li><a href="aboutus.html">О Компании</a></li>
 		</ul>
 		<ul class="user-navigation">
-		  <li class="search-link"><a href="#">Поиск</li></a>
+		  <li class="search-link"><a href="#">Поиск</a></li>
 		  <!-- Модальная форма поиска-->
 		  <div class="modal search-form">
 		  <form action="/echo" method="post">
-			 <input type="search" name="search" placeholder="Что ищем?">
+			<label for="search"></label>
+			<input type="search" id="search" name="search" placeholder="Что ищем?">
 		  </form>
 		  </div>
-		  <li class="login"><a href="#">Вход</li></a>
+		  <li class="login"><a href="#">Вход</a></li>
 		  <!--  Модальная форма входа в личный кабинет-->
 		  <div class="modal enter-form">
 		  <form action="/echo" method="post">
-			<input type="email" name="email" placeholder="Электронная почта" required>
-			<input type="password" name="password" placeholder="Пароль" required>
+			<label for="email"></label>
+			<input type="email" id="email" name="email" placeholder="Электронная почта" required>
+			<label for="password"></label>
+			<input type="password" id="password" name="password" placeholder="Пароль" required>
 			  <div class="button">
 				 <input type="submit" name="enter" value="Войти">
 			  </div>
