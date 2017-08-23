@@ -6,14 +6,14 @@
 	<meta name="keywords" content="Магазин мороженого, мороженое, вкусное, Глейси">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин мороженого «Глейси»</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
     <base href="https://htmlacademy-htmlcss.github.io/456507-gllacy/3/">
 </head>
   <body>
 	<header class="main-header">
 	  <div class="head-logo">
-		<a href="index.html"><img src="http://placehold.it/150x100.jpg" width="368" height="153" alt="Логотип Глейси"></a>
+		<a href="index.html"><img src="http://placehold.it/150x100.jpg" width="154" height="64" alt="Логотип Глейси"></a>
 	  </div>
 	  <nav class="main-navigation">	    
 		<ul class="site-navigation">
@@ -30,64 +30,65 @@
 		  <li><a href="aboutus.html">О Компании</a></li>
 		</ul>
 		<ul class="user-navigation">
-		  <li class="search-link"><a href="#">Поиск</li></a>
+		  <li class="search-link"><a href="#">Поиск</a></li>
 		  <!-- Модальная форма поиска-->
 		  <div class="modal search-form">
 		  <form action="/echo" method="post">
-			 <input type="search" name="search" placeholder="Что ищем?">
+			<label for="search"></label>
+			<input type="search" id="search" name="search" placeholder="Что ищем?">
 		  </form>
 		  </div>
-		  <li class="login"><a href="#">Вход</li></a>
+		  <li class="login"><a href="#">Вход</a></li>
 		  <!--  Модальная форма входа в личный кабинет-->
 		  <div class="modal enter-form">
 		  <form action="/echo" method="post">
-			<input type="email" name="email" placeholder="Электронная почта" required>
-			<input type="password" name="password" placeholder="Пароль" required>
-			  <div class="half-width">
-				<div class="button">
-				  <input type="submit" name="enter" value="Войти">
-				</div>
+			<label for="email"></label>
+			<input type="email" id="email" name="email" placeholder="Электронная почта" required>
+			<label for="password"></label>
+			<input type="password" id="password" name="password" placeholder="Пароль" required>
+			  <div class="button">
+				 <input type="submit" name="enter" value="Войти">
+			  </div>
 			  <!--/div-->
 			  <!--div class="half-width"-->
-				<div class="registration">
-				  <a class="reg-password" href="#">Забыли пароль?</a>
-				  <a class="reg-new" href="#">Новая регистрация</a>
-				</div>
+			  <div class="registration">
+				<a class="reg-password" href="#">Забыли пароль?</a>
+				<a class="reg-new" href="#">Новая регистрация</a>
 			  </div>
 		  </form>
 		  </div> 
 		</ul>
 	  </nav>
-		  <li class="full-basket"><a href="#">2 товара</a></li>
-		  <!--Модальное окно входа в корзину-->
-		  <div class="modal content-basket">
-			<table>
-			  <tr>
-				<td><div class="mark-item"></div></td>
-				<td><img src="#" width="#" height="#" alt="Пломбир"></td>
-				<td><span class="modal-close">x</span><a href="#">Пломбир с апельсиновым джемом</a></td>
-				<td>1,5кг x <span class="price-basket">200 руб.</span></td>
-				<td>300 руб.</td>
-				  </tr>
-					<tr>
-					  <td><div class="mark-item"></div></td>
-				      <td><img src="#" width="#" height="#" alt="Клубничный пломбир"></td>
-					  <td><span class="modal-close">x</span><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-					  <td>1,5кг x <span class="price-basket">300 руб.</span></td>
-					  <td>450 руб.</td>
-					</tr>
-					<tr>
-					  <td class="sum" colspan="4"><b>Итого: 750 руб.</b></td>
-					</tr>
-			</table>
-			<div class="button order-form">
-			  <button class="button">Оформить заказ</a>
-			</div>
-		  </div> 
+	  <li class="full-basket"><a href="#">2 товара</a></li>
+	  <!--Модальное окно входа в корзину-->
+	  <div class="modal content-basket">
+		<table>
+		  <tr>
+			<td><div class="mark-item"></div></td>
+			<td><img src="#" width="#" height="#" alt="Пломбир"></td>
+			<td><span class="modal-close">x</span><a href="#">Пломбир с апельсиновым джемом</a></td>
+			<td>1,5кг x <span class="price-basket">200 руб.</span></td>
+			<td>300 руб.</td>
+		  </tr>
+	      <tr>
+			<td><div class="mark-item"></div></td>
+			<td><img src="#" width="#" height="#" alt="Клубничный пломбир"></td>
+			<td><span class="modal-close">x</span><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+			<td>1,5кг x <span class="price-basket">300 руб.</span></td>
+			<td>450 руб.</td>
+		  </tr>
+		  <tr>
+			<td class="sum" colspan="4"><b>Итого: 750 руб.</b></td>
+		  </tr>
+		</table>
+		<div class="button order-form">
+		  <button class="button">Оформить заказ</a>
+		</div>
+	  </div> 
 		
 	  <div class="blog-info">	
 		<p>С 10 до 20, ежедневно</p>
-		<p><b>8 812 450-25-25</b></p> 
+		<b>8 812 450-25-25</b>
 	  </div>
 	  <ul class="breadcrumbs">
 		<li><a href="index.html">Главная</a></li>
@@ -106,7 +107,7 @@
 			  <option value="popularity">по популярности</option>
 			  <option value="inexpensive">сначала недорогие</option>
 			  <option value="expensive">сначала дорогие</option>
-			  <option value="Fat content">по жирности</option>
+			  <option value="fat_content">по жирности</option>
 			</select>
 		  </div>
 		  <div class="sort-items">
@@ -276,8 +277,7 @@
 		<p class="footer-copyright">
 		  Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017
 		</p>
-	</footer>
-	
+	</footer>	
   </body>
 </html>
 
