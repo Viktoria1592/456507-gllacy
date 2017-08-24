@@ -193,7 +193,7 @@
 		<b class="address bold">
 		  ул. Большая Конюшенная<br>
 		  19/8, Санкт-Петербург<br>
-		</b><br>
+		</b>
 		  Для заказов по телефону:<br>
 		<b class="tel bold">
 		  8 812 450-25-25
@@ -206,22 +206,21 @@
 	  </section>
 	  <!-- Модальная форма обратной связи -->
 	  <div class="modal feedback">
-	    <h2 class="visualy-hidden">Форма обратной связи</h2>
-		<h3>Мы обазятельно вам ответим!</h3>
+		<h3>Мы обязательно вам ответим!</h3>
 		<form action="/echo" method="post">
 		  <p>
 		    <label for="username"></label>
-			<input type="text" name="username" id="username" placeholder="Как вас зовут?">
+			<input type="text" name="username" id="username" placeholder="Как вас зовут?" required>
 		  </p>
           <p>
 		    <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
+            <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?" required>
 		  </p>
           <p>
 		    <label for="message"></label>
-            <textarea id="message" name="message" placeholder="Напишите что-нибудь..."></textarea>
+			<textarea id="message" name="message" placeholder="Напишите что-нибудь..."></textarea>
 		  </p>
-		  <input class="button" type="button" value="Отправить">
+		  <input class="button" type="submit" value="Отправить">
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
       </div>
@@ -249,7 +248,3 @@
 	</footer>
   </body>
 </html>
-
-
-
-
