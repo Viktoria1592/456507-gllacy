@@ -15,8 +15,109 @@ html, body {
 	
 	background-color: #849d8f;
 	min-width: 900px;
-	max-width: 1200px;
 }
+/*Мороженое и кнопка*/
+.site-wrapper {
+	min-width: 900px;
+	background-color: #849d8f;
+	background-image: url(../img/ice-cream.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	transition: background-image 0.5s ease,
+				background-color 0.5s ease;
+	
+}
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  background-image: url(../img/ice-chocolate.png);
+}
+
+.site-wrapper::before {
+  background-image: url(../img/ice-plum.png);
+}
+.content-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	/*padding: 0 10px;*/
+}
+/*.container {
+	width: 1146px;
+	padding: 0 27px;
+	margin: 0 auto;
+}*/
+.main-header { /*Временно для демо*/
+	
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0 0 0 4px #000000;
+}
+.slider {
+	position: relative;
+	padding-top: 270px;
+	text-align: center;
+	color: #ffffff;
+}
+.slide-title {
+	width: 700px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-weight: 800;
+	font-size: 60px;
+}
+.slider-controls {
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	z-index: 20;
+	font-size: 0;
+}
+.slider-controls label {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin-right: 8px;
+	vertical-align: top;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+body > input[type="radio"] {
+	display: none;
+}
+.slider-top {
+	display: none;
+}
+#button-1:checked ~ .site-wrapper #slide1,
+#button-2:checked ~ .site-wrapper #slide2,
+#button-3:checked ~ .site-wrapper #slide3 {
+	display: block;
+}
+#button-1:checked ~ .site-wrapper {
+	background-color: #849d8f;
+	background-image: url(../img/ice-cream.png);
+}
+
+#button-2:checked ~ .site-wrapper {
+	background-color: #8996a6;
+	background-image: url(../img/ice-chocolate.png);
+}
+
+#button-3:checked ~ .site-wrapper {
+	background-color: #9d8b84;
+	background-image: url(../img/ice-plum.png);
+}
+#button-1:checked ~ .site-wrapper label[for="button-1"],
+#button-2:checked ~ .site-wrapper label[for="button-2"],
+#button-3:checked ~ .site-wrapper label[for="button-3"] {
+	background-color: #ffffff;
+}
+
 h2{
 	font-size: 60px;
 	line-height: 60.35px;
@@ -40,15 +141,24 @@ h2{
 	background: -ms-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
 	background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	background: #f26843;
 	width: 280px;
 	height: 64px;
 	border-radius: 100px;
 	font-size: 32px;
-    font-weight: 700;
-    line-height: 44px;
-    text-align: center;
-    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+	font-weight: 700;
+	line-height: 44px;
+	text-align: center;
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 	cursor: pointer;
+	padding: 16px 42px;
+	text-decoration: none;
+	display: ;
+	vertical-align: top;
+}
+
+label:hover {
+	background-color: #c5cfc8;
 }
 .slide:hover,
 .want:hover,
@@ -92,17 +202,34 @@ h2{
 	line-height: 24px;
 	color: #ffffff;
 	cursor: pointer;
+	padding: 14px 22px;
+	text-decoration: none;
 }
 .product-view {
+	background: -webkit-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -moz-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -o-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -ms-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
+	box-shadow: 0px 1px 2px 0px #ac1000;
+	background-color: #e84d37;
 	width: 200px;
 	height: 44px;
 	border-radius: 100px;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 24px;
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	line-height: 24px !important;
 	color: #fefefe;
+	padding: 13px 17px;
+	text-decoration: none;
 }
 .send {
+	background: -webkit-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -moz-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -o-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -ms-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	width: 129px;
 	height: 44px;
 	border-radius: 100px;
@@ -112,6 +239,13 @@ h2{
 	color: #fefefe;
 }
 .feedback {
+	background: -webkit-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -moz-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -o-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: -ms-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+	background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	background-color: #e84d37;
 	width: 252px;
 	height: 44px;
 	border-radius: 100px;
@@ -119,6 +253,8 @@ h2{
 	font-weight: 700;
 	line-height: 24px;
 	color: #fefefe;
+	text-decoration: none;
+	padding: 13px 28px;
 }
 .sign-up {
 	width: 100px;
@@ -129,12 +265,6 @@ h2{
 	line-height: 24px;
 	color: #fefefe;
 }
-/*.slider-top {
-	background: url(../img/ice-cream.png) no-repeat;
-	width: 1045px;
-	background-color: #849d8f;
-	height: 881px;
-}*/
 .promo h3 {
 	font-size: 35px;
 	font-weight: 700;
@@ -188,7 +318,7 @@ h2{
 	line-height: 18px;
 	color: #ffffff;
 	
-	background-color: #849d8f;
+	/*background-color: #849d8f;*/
 }
 .site-navigation,
 .sub-navigation,
@@ -263,16 +393,17 @@ h2{
 	
 }
 .subscribe {
-	background: url(../img/post.png);
+	background: url(../img/post.png) no-repeat;
 	border-radius: 15px;
 	width: 560px;
 	height: 220px;
 }
 .subscribe-fon {
-	width: 549px;
-	height: 210px;
+	/*width: 549px;*/
+	min-height: 210px;
 	border-radius: 10px;
 	background-color: #f8f7f4;
+	margin: 5px;
 }
 .subscribe p {
 	font-size: 16px;
@@ -313,9 +444,11 @@ input:focus {
 	font-weight: 700;
 }
 .map {
-	width: 1200px;
+	min-width: 1200px;
 	min-height: 430px;
-	background: #e9e2c6 url(../img/map.jpg) no-repeat;
+	background: #e9e2c6 url(../img/map.jpg) 50% 50% no-repeat;
+	margin-top: 40px;
+	
 }
 .map-form {
 	width: 302px;
@@ -390,6 +523,9 @@ input:focus {
 	padding-left: 15px;
 	margin-bottom: 20px;
 }
+.modal-enter-form .registration {
+	margin-left: 3px;
+}
 .modal-search-form {
 	width: 341px;
 	height: 84px;
@@ -411,4 +547,34 @@ input:focus {
 	height: 276px;
 	border-radius: 10px;
 	background-color: #f8f7f4;
+}
+/*Сетки*/
+.flex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+}
+.product-item {
+	width: 267px;
+	margin: 0 auto;
+}
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+.blog-info {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.site-navigation {
+	display: inline-flex;
+}
+.user-navigation {
+	display: inline-flex;
 }
