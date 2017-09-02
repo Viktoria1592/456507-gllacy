@@ -18,24 +18,24 @@
 	  </div>
 	    <ul class="site-navigation">
 		  <li class="active"><a href="catalog.html">Каталог</a>
-		    <ul class="sub-navigation">
+		    <!--ul class="sub-navigation">
 			  <li><a class="item-bold" href="#">Новинки</a></li>
 			  <li><a href="catalog.html">Сливочное</a></li>
 			  <li><a href="#">Щербеты</a></li>
 			  <li><a href="#">Фруктовый лед</a></li>
 			  <li><a href="#">Мелорин</a></li>
-			</ul>
+			</ul-->
 		  </li>
   		  <li><a href="payment.html">Доставка и оплата</a></li>
 		  <li><a href="aboutus.html">О Компании</a></li>
 		</ul>
 		<ul class="user-navigation">
 		  <li class="search-link"><a href="#">Поиск</a></li>
-		  <li class="login"><a href="#">Вход</a></li>
+		  <li class="login-link"><a href="#">Вход</a></li>
+		  <li class="full-basket"><a href="#">2 товара</a></li>
 		</ul>
 	  </nav>
-	  <li class="full-basket"><a href="#">2 товара</a></li>
-		
+	  
 	  <div class="blog-info">	
 		<p>С 10 до 20, ежедневно</p>
 		<b>8 812 450-25-25</b>
@@ -200,7 +200,7 @@
 	  <!-- Нумерация страниц -->
 	  <div class="pagination">
 	    <a href="#" class="button-page">«</a>
-		<a href="#" class="active-page button">1</a>
+		<a href="#" class="active-page button-page">1</a>
 		<a href="#" class="button-page">2</a>
 		<a href="#" class="button-page">3</a>
 		<a href="#" class="button-page">4</a>
@@ -229,21 +229,21 @@
 		</div>
 	</footer>
 	<!-- Модальная форма поиска-->
-		  <div class="modal search-form">
+		  <div class="modal-search-form">
 			  <form action="/echo" method="post">
 				<label for="search"></label>
 				<input type="search" id="search" name="search" placeholder="Что ищем?">
 			  </form>
 		  </div>
 	<!--  Модальная форма входа в личный кабинет-->
-		  <div class="modal enter-form">
+		  <div class="modal-enter-form">
 			  <form action="/echo" method="post">
 				<label for="email"></label>
 				<input type="email" id="email" name="email" placeholder="Электронная почта" required>
 				<label for="password"></label>
 				<input type="password" id="password" name="password" placeholder="Пароль" required>
-				  <div class="button">
-					 <button class="button" type="submit">Войти</button>
+				  <div class="">
+					 <button class="button sign-up" type="submit">Войти</button>
 				  </div>
 				  <!--/div-->
 				  <!--div class="half-width"-->
