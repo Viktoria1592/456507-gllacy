@@ -320,6 +320,7 @@ label:hover {
 	color: #fefefe;
 	text-decoration: none;
 	padding: 13px 28px;
+	display: inline-block;
 }
 .sign-up {
 	background: -webkit-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
@@ -380,6 +381,16 @@ label:hover {
 	height: 229px;
 	background-color: #070100;
 }
+.features {
+	background-image: url(../img/waffle_new.png);
+	background-position: 0 0;
+	background-repeat: repeat;
+	border-radius: 15px;
+	background-color: #ece1c7;
+	width: 1146px;
+	height: 306px;
+	margin-left: 27px;
+}
 .features h3 {
 	font-size: 24px;
 	font-weight: 500;
@@ -393,102 +404,46 @@ label:hover {
 	line-height: 22px;
 	color: #323232;
 	list-style: none;
-	background: rgba(255, 45, 82, 0.2);
-	box-shadow: 0 0 0 3px rgb(255, 45, 82);
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-top: -16px;	
+	margin-top: -20px;
 }
 .features-item p {
-	width: 476px;
+	margin-top: 20px;
+	/*background: rgba(255, 45, 82, 0.2);
+	box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
 }
-.second {
+.features-first {
+	width: 480px;
+	margin-left: 36px;
+	margin-right: 87px;
+	margin-top: 0;	
 }
-.features-list .ice-cream,
-.features-list .cow,
-.features-list .eco,
-.features-list .thermometer {
-	position: relative;	
+.features-second {
+	width: 480px;	
 }
-.ice-cream::before {
-	content: "";
-	position: absolute;
-	top: -14px;
-	left: -59px;
-	
-	background-image: url(../img/ice-cream.svg);
+.features-list {
+	background-image: url(../img/thermometer.svg), url(../img/cow.svg), url(../img/ice-cream.svg), url(../img/eco.svg);
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 585px 93px, 585px 7px, 20px 5px, 20px 95px;
+}
 
-	width: 49px;
-	height: 49px;
-}
-.cow::before {
-	content: "";
-	position: absolute;
-	top: -96px;
-	left: 506px;
-	
-	background-image: url(../img/cow.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-
-	width: 49px;
-	height: 49px;
-}
-.eco::before {
-	content: "";
-	position: absolute;
-	top: 74px;
-	left: -611px;
-	
-	background-image: url(../img/eco.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-
-	width: 49px;
-	height: 49px;
-}
-.thermometer::before {
-	content: "";
-	position: absolute;
-	top: -8px;
-	left: -47px;
-	
-	background-image: url(../img/thermometer.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-
-	width: 49px;
-	height: 49px;
-}
-.features {
-	background-image: url(../img/waffle_new.png);
-	background-position: 0 0;
-	background-repeat: repeat;
-	border-radius: 15px;
-	background-color: #ece1c7;
-	width: 1146px;
-	height: 306px;
-	margin-left: 27px;	
-}
 .blog-info p {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 16px;
 	color: #ffffff;
-	margin-top: 12px;
+	margin: 0;
 }
 .blog-info b {
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 24px;
 	color: #ffffff;
-	margin-top: -13px;
+	margin: 0;
 }
 .blog-info {
-	margin-top: -14px;
+	margin: 0;
 }
 .products {
 	background: rgba(0, 128, 0, 0.2);
@@ -519,8 +474,13 @@ label:hover {
 	font-size: 45px;
 	color: #ffffff;
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
-	margin-top: -60px;
-	margin-right: 114px;
+	position: absolute;
+	top: 209px;
+	left: 1px;
+}
+.container-min {
+	position: relative;
+	
 }
 .price span{
 	font-weight: 700;
@@ -646,7 +606,7 @@ input:focus {
 	padding: 16px 25px;
 }
 .button-map {
-	margin-top: 41px;
+	margin-top: 26px;
 }
 .main-footer {
 	color: #ffffff;
@@ -690,8 +650,11 @@ input:focus {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 326px;
-	margin-right: 55px;
+	width: 350px;
+	margin-right: 31px;
+}
+.footer-second {
+	margin-right: 8px;
 }
 .footer-info a {
 	font-size: 13px;
@@ -850,11 +813,15 @@ textarea:focus {
 .flex {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 .pagination {
 	display: flex;
 	justify-content: flex-end;
+}
+.products {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .product-item {
 	width: 267px;
@@ -864,8 +831,8 @@ textarea:focus {
 .main-navigation {
 	display: flex;
 	align-items: flex-start;
-	flex-direction: row;
-	/*min-width: 935px;*/
+	/*flex-direction: row;
+	min-width: 935px;*/
 }
 .blog-info {
 	display: flex;
@@ -918,7 +885,7 @@ textarea:focus {
 	padding-bottom: 10px;
 }
 .user-navigation {
-	max-width: 262px;
+	max-width: 263px;
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 6px;
@@ -959,6 +926,8 @@ textarea:focus {
 
 	width: 21px;
 	height: 19px;
+	cursor: pointer;
+	opacity: 1;
 }
 .login-link:hover::before,
 .login-link:focus::before,
