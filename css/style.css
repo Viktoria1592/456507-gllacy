@@ -506,7 +506,7 @@ label:hover {
 	line-height: 24px;
 	color: #fefefe;
 	text-decoration: none;
-	padding: 13px 28px;
+	padding: 13px 27px;
 	display: inline-block;
 }
 .sign-up {
@@ -742,10 +742,10 @@ label:hover {
 }
 .product-view {
 	display: none;
-	position: absolute;
+	/*position: absolute;*/
 }
 .product-item:hover .product-view {
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	display: inline-block;
 	vertical-align: top;
@@ -918,6 +918,7 @@ input:focus {
 	margin-right: 27px;
 	padding: 16px 25px;
 	position: absolute;
+	left: 900px;
 }
 .button-map {
 	margin-top: 26px;
