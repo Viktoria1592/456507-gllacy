@@ -472,7 +472,7 @@ label:hover {
 	font-weight: 700 !important;
 	line-height: 24px !important;
 	color: #fefefe;
-	padding: 13px 17px;
+	padding: 11px 13px;
 	text-decoration: none;
 }
 .send {
@@ -541,7 +541,7 @@ label:hover {
 	line-height: 24px;
 	color: #fefefe;
 	text-decoration: none;
-	padding: 11px 15px;
+	padding: 11px 13px;
 	display: inline-block;
 	margin-right: 14px;
 }
@@ -564,7 +564,7 @@ label:hover {
 	color: #ffffff;
 	margin-bottom: 55px;
 	margin-left: 20px;
-	margin-right: 30px;
+	margin-right: 27px;
 }
 .promo {
 	padding-top: 50px;
@@ -758,7 +758,8 @@ label:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-	width: 293px;
+	width: 280px;
+	display: inline-block;
 }
 .product-item img {
 	border-radius: 50%;
@@ -1076,7 +1077,7 @@ input[type="password"]:focus {
 	background-color: #ffffff;
 }
 .modal-enter-form .registration {
-	margin-left: 3px;
+	margin-left: 1px;
 }
 .modal-search-form {
 	width: 341px;
