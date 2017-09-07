@@ -742,6 +742,7 @@ label:hover {
 }
 .product-view {
 	display: none;
+	position: absolute;
 }
 .product-item:hover .product-view {
 	position: relative;
@@ -760,7 +761,9 @@ label:hover {
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	width: 280px;
 	display: inline-block;
+	cursor: pointer;
 }
+
 .product-item img {
 	border-radius: 50%;
 	overflow: hidden;
