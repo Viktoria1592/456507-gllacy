@@ -373,7 +373,7 @@ input[type="radio"].visually-hidden {
 	font: inherit;
 	text-align: center;
 	color: #ffffff;
-	background-color: #f26843;
+	/*background-color: #f26843;*/
 	border: none;
 	cursor: pointer;
 }
@@ -401,7 +401,7 @@ input[type="radio"].visually-hidden {
 	margin-top: -50px;
 }
 
-label:hover {
+.slider-controls label:hover {
 	background-color: #c5cfc8;
 }
 .slide:hover,
@@ -881,7 +881,8 @@ label:hover {
 .subscribe input {
 	font: inherit;
 	border-radius: 5px;
-	border: 1px solid rgba(178, 178, 178, 0.52);
+	/*border: 1px solid rgba(178, 178, 178, 0.52);*/
+	border: 2px solid rgba(178, 178, 178, 0.52);
 	width: 368px;
 	height: 44px;
 	background-color: #ffffff;
@@ -1082,7 +1083,8 @@ input:focus {
 	width: 241px;
 	height: 44px;
 	border-radius: 5px;
-	border: 1px solid #d3d3d2;
+	/*border: 1px solid #d3d3d2;*/
+	border: 2px solid rgba(178, 178, 178, 0.52);
 	background-color: #ffffff;
 	padding-left: 15px;
 	margin-bottom: 20px;
@@ -1114,7 +1116,8 @@ input[type="password"]:focus {
 	width: 311px;
 	height: 44px;
 	border-radius: 5px;
-	border: 1px solid #d3d3d2;
+	/*border: 2px solid #d3d3d2;*/
+	border: 2px solid rgba(178, 178, 178, 0.52);
 	background-color: #ffffff;
 	padding-left: 15px;
 }
@@ -1135,6 +1138,7 @@ input[type="search"]:focus {
 	top: 338px;
 	left: 50%;
 	margin-left: -235px;
+	position: absolute;
 }
 .modal-close {
 	position: absolute;
@@ -1181,7 +1185,8 @@ input[type="search"]:focus {
 	width: 267px;
 	height: 44px;
 	border-radius: 5px;
-	border: 1px solid rgba(178, 178, 178, 0.52);
+	/*border: 1px solid rgba(178, 178, 178, 0.52);*/
+	border: 2px solid rgba(178, 178, 178, 0.52);
 	background-color: #ffffff;
 	padding-left: 15px;
 	margin-bottom: 20px;
@@ -1191,7 +1196,8 @@ input[type="search"]:focus {
 	width: 428px;
 	height: 155px;
 	border-radius: 5px 4px 4px 5px;
-	border: 1px solid rgba(178, 178, 178, 0.52);
+	/*border: 1px solid rgba(178, 178, 178, 0.52);*/
+	border: 2px solid rgba(178, 178, 178, 0.52);
 	background-color: #ffffff;
 	padding-left: 15px;
 	margin-bottom: 20px;
@@ -1438,7 +1444,7 @@ textarea:focus {
 }
 .form-wrapper {
 	margin-top: 5px;
-	padding: 6px 3px 6px 13px;
+	padding: 6px 3px 6px 12px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
 }
@@ -1500,6 +1506,11 @@ input[type="radio"]:checked + label::before {
 input[type="checkbox"]:checked + label::before {
 	opacity: 0.8;
 	background-image: url(../img/checkbox-on.svg);
+	width: 27px;
+	height: 23px;
+	display: inline-block;
+	content: "";
+	margin-right: 6px;
 }
 .form-wrapper input[type="checkbox"] + label:hover::before,
 .form-wrapper input[type="checkbox"]:focus + label::before {
