@@ -8,7 +8,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: 'Roboto', "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
@@ -150,8 +150,14 @@ input[type="radio"].visually-hidden {
 	margin: 0 27px;
 	display: flex;
 	align-items: flex-start;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 }
 .site-navigation {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 13px;
@@ -166,6 +172,7 @@ input[type="radio"].visually-hidden {
 .site-navigation > li {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	padding-right: 27px;
 }
 
@@ -326,6 +333,7 @@ input[type="radio"].visually-hidden {
 }
 .user-navigation .search {
 	display: inline-block;
+	vertical-align: top;
 	padding: 6px 9px 0 6px;
 	font-size: 0px;
 }
@@ -468,9 +476,9 @@ input[type="radio"].visually-hidden {
 	width: 200px;
 	height: 44px;
 	border-radius: 100px;
-	font-size: 18px !important;
-	font-weight: 700 !important;
-	line-height: 24px !important;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
 	color: #fefefe;
 	padding: 11px 13px;
 	text-decoration: none;
@@ -509,6 +517,7 @@ input[type="radio"].visually-hidden {
 	text-decoration: none;
 	padding: 11px 27px;
 	display: inline-block;
+	vertical-align: top;
 }
 .sign-up {
 	background: -webkit-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
@@ -613,11 +622,17 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	display: flex;
 	flex-wrap: wrap;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 .features-item {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	margin-top: 10px;
 	margin-bottom: 1px;
@@ -659,6 +674,9 @@ input[type="radio"].visually-hidden {
 	justify-content: flex-end;
 	align-items: flex-end;
 	flex-direction: column;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	margin-right: 27px;
 }
 .blog-info p {
@@ -676,6 +694,9 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 }
 .breadcrumbs {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
@@ -873,6 +894,7 @@ input[type="radio"].visually-hidden {
 	line-height: 22px;
 	color: #5a5a5a;
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	top: 14px;
 	left: 24px;
@@ -917,12 +939,15 @@ input:focus {
 	font-weight: 700;
 }
 .map {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
-	/*min-width: 1200px;
+	min-width: 1200px;
 	min-height: 430px;
-	background: #e9e2c6 url(../img/map.jpg) 50% 50% no-repeat;*/
+	background: #e9e2c6 url(../img/map.jpg) 50% 50% no-repeat;
 	margin-top: 40px;
 }
 .map-form {
@@ -975,8 +1000,28 @@ input:focus {
 	color: #ffffff;
 	opacity: 0.8;
 }
+.social-button-tw:hover,
+.social-button-tw:focus,
+.social-button-insta:hover,
+.social-button-insta:focus,
+.social-button-vk:hover,
+.social-button-vk:focus,
+.social-button-fb:hover,
+.social-button-fb:focus {
+    opacity: 1.8;
+    outline: none;
+}
 
+.social-button-tw:active,
+.social-button-insta:active,
+.social-button-vk:active,
+.social-button-fb:active {
+    opacity: 0.7;
+}
 .footer-info {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	flex-wrap: wrap;
 	/*justify-content: flex-start;*/
@@ -1154,23 +1199,27 @@ input[type="search"]:focus {
 }
 .modal-close::before,
 .modal-close::after {
-  content: "";
+	content: "";
 
-  position: absolute;
-  top: 7px;
-  left: 0px;
+	position: absolute;
+	top: 7px;
+	left: 0px;
 
-  width: 18px;
-  height: 3px;
+	width: 18px;
+	height: 3px;
 
-  background-color: #323232;
+	background-color: #323232;
 }
 .modal-close::before {
-  transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
 }
 
 .modal-close::after {
-  transform: rotate(-45deg);
+	-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+			transform: rotate(-45deg);
 }
 .modal-feedback h3 {
 	font-size: 24px;
@@ -1223,10 +1272,16 @@ textarea:focus {
 	background-color: #ffffff;
 }
 .flex {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	justify-content: space-between;
 }
 .pagination {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	justify-content: flex-end;
 	margin: 0;
@@ -1267,6 +1322,9 @@ textarea:focus {
 	cursor: default;
 }
 .products {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -1327,6 +1385,9 @@ textarea:focus {
 	line-height: 16px;
 }
 .sort-section {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;	
 	flex-wrap: wrap;
 	margin-top: 10px;
