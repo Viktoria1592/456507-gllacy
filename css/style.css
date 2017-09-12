@@ -999,6 +999,8 @@ input:focus {
 }
 .iframe {
 	border: 0;
+	width: 100%;
+	height: 430px;
 }
 .map-form {
 	width: 302px;
