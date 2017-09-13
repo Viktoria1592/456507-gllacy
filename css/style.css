@@ -8,7 +8,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	
-	font-family: 'Roboto', "Arial", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
@@ -60,6 +60,9 @@ html, body {
 	margin-bottom: 40px;
 	font-weight: 700;
 	font-size: 60px;
+	line-height: 60.35px;
+	text-align: center;
+	color: #ffffff;
 }
 .slider-controls {
 	position: absolute;
@@ -79,7 +82,7 @@ html, body {
 	border-radius: 50%;
 	cursor: pointer;
 }
-body > input[type="radio"] {
+.body > input[type="radio"] {
 	display: none;
 }
 .form-wrapper > input[type="checkbox"],
@@ -114,13 +117,14 @@ body > input[type="radio"] {
 	background-color: #ffffff;
 }
 
-h2{
+/*h2{
 	font-size: 60px;
 	line-height: 60.35px;
 	font-weight: 700;
 	text-align: center;
 	color: #ffffff;
-}
+}*/
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -941,11 +945,11 @@ input[type="radio"].visually-hidden {
 	padding-left: 15px;
 	
 }
-input:hover {
+.subscribe input:hover {
 	border: 2px solid rgba(154, 154, 154, 0.52);
 	background-color: #ffffff;
 }
-input:focus {
+.subscribe input:focus {
 	border: 2px solid rgba(46, 136, 228, 0.52);
 	background-color: #ffffff;
 }
@@ -1645,7 +1649,7 @@ input:focus {
 	display: block;
 	margin-top: 27px;
 	margin-left: 3px;
-	padding: 7px 28px;
+	padding: 7px 25px;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 500;
